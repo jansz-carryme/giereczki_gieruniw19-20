@@ -16,13 +16,14 @@ _global_script_class_icons={
 [application]
 
 config/name="Giereczka z 06.11"
-run/main_scene="res://Area2D.tscn"
+run/main_scene="res://MAIN SCENE.tscn"
 config/icon="res://icon.png"
 
 [display]
 
-window/size/width=720
-window/size/height=480
+window/size/width=480
+window/size/height=720
+window/size/resizable=false
 
 [rendering]
 
