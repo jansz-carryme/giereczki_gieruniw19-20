@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dinoboi.tscn" type="PackedScene" id=1]
+[ext_resource path="res://próbnascena.tscn" type="PackedScene" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="dinoboi" parent="." instance=ExtResource( 1 )]
+position = Vector2( 102.114, 314.506 )
+
+[node name="StaticBody2D" parent="dinoboi" instance=ExtResource( 2 )]
