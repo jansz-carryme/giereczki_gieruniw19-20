@@ -50,6 +50,6 @@ transform = Transform( -2.92867e-08, 0, 0.17976, 0, 4.50841, 0, -3.87479, 0, -6.
 wait_time = 5.0
 autostart = true
 
-[node name="start" type="StaticBody" parent="." instance=ExtResource( 10 )]
+[node name="start" parent="." instance=ExtResource( 10 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.879242, 2.08917, 0 )
 [connection signal="timeout" from="Timer" to="pilka" method="_on_Timer_timeout"]
