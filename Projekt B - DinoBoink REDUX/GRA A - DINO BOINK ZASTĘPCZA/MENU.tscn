@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://button_start.gd" type="Script" id=1]
+[ext_resource path="res://titlescreen.png" type="Texture" id=2]
+[ext_resource path="res://4fc332d10557f30e23c7328800e5557e95e68a9f.webp" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -8.909
+margin_top = -10.6908
+margin_right = 1294.09
+margin_bottom = 729.309
+color = Color( 0.611765, 0.439216, 0.67451, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_start" type="Button" parent="."]
+margin_left = 303.495
+margin_top = 283.729
+margin_right = 1075.49
+margin_bottom = 689.729
+icon = ExtResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="4fc332d10557f30e23c7328800e5557e95e68a9f" type="Sprite" parent="TextureRect2"]
+position = Vector2( 251.127, 136.523 )
+scale = Vector2( 0.389734, 0.397159 )
+texture = ExtResource( 3 )
+[connection signal="pressed" from="button_start" to="button_start" method="_on_button_start_pressed"]

@@ -50,3 +50,7 @@ func _on_trex_zone_body_entered(body):
 
 func _on_endgame_body_entered(body):
 	get_tree().change_scene("res://end.tscn")
+
+
+func _on_fall_body_entered(body):
+	get_tree().change_scene("res://end.tscn")
