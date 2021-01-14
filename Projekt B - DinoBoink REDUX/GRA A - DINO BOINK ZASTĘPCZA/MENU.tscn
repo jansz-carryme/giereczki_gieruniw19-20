@@ -22,10 +22,10 @@ __meta__ = {
 }
 
 [node name="button_start" type="Button" parent="."]
-margin_left = 303.495
-margin_top = 283.729
-margin_right = 1075.49
-margin_bottom = 689.729
+margin_left = 303.0
+margin_top = 284.0
+margin_right = 1075.0
+margin_bottom = 690.0
 icon = ExtResource( 2 )
 script = ExtResource( 1 )
 __meta__ = {
