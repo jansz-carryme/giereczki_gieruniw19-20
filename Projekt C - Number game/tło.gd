@@ -29,7 +29,7 @@ func _on_SpinBoxUI_value_changed(try):
 	tries = tries - 1
 	get_node("LabelTries").value = tries
 	if try == $SpinBoxCode.value:
-		get_node("LabelUI").text = "Your brain is too humongous!"
+		get_tree().change_scene("res://close oen.tscn")
 	if try > $SpinBoxCode.value:
 		get_node("LabelUI").text = "You critically overestimate!"
 	if try < $SpinBoxCode.value:

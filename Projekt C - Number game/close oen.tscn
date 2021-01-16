@@ -6,7 +6,7 @@
 [ext_resource path="res://TeknoAXEs Royalty Free Music - Royalty Free Music 112 (Try Hacking the Mainframe) TechnoBreakbeat Action Suspense.ogg" type="AudioStream" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-size = 28
+size = 39
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -23,7 +23,7 @@ texture = ExtResource( 3 )
 margin_right = 467.0
 margin_bottom = 90.0
 custom_fonts/font = SubResource( 1 )
-text = "IT WAS A CLOSE ONE ALE CI SIE UDALO, NIEZLA ROBOTA!"
+text = "GOOD JOB YOU!"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
