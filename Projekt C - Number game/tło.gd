@@ -38,5 +38,5 @@ func _on_SpinBoxUI_value_changed(try):
 		get_tree().change_scene("res://gameover.tscn")
 #gdy jest 0 prób i wygrana
 	if $LabelTries.value == 0 and try == $SpinBoxCode.value:
-		get_tree().change_scene("res://close oen.tscn")
+		get_tree().change_scene("res://win.tscn")
 		
