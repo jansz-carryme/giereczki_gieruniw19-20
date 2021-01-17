@@ -20,10 +20,11 @@ position = Vector2( 316.714, 211.661 )
 texture = ExtResource( 4 )
 
 [node name="Label" type="Label" parent="."]
-margin_right = 467.0
+margin_left = -1.33484
+margin_right = 465.665
 margin_bottom = 90.0
 custom_fonts/font = SubResource( 1 )
-text = "GOOD JOB YOU!"
+text = "GOOD JOB YOU! YOU PREVENTED THE SUPER HACK!"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
