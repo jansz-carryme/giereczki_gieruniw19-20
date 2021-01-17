@@ -70,7 +70,7 @@ margin_top = 10.2986
 margin_right = 450.203
 margin_bottom = 167.299
 custom_fonts/font = SubResource( 1 )
-text = "Witaj, samuraju. Mamy liczbe 0-100 do zgadniecia!"
+text = "Witaj, samuraju. Mamy liczbe 1-100 do zgadniecia!"
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -103,7 +103,9 @@ margin_top = 304.976
 margin_right = 502.211
 margin_bottom = 328.976
 theme = SubResource( 4 )
-value = 2.0
+min_value = 1.0
+value = 1.0
+exp_edit = true
 editable = false
 __meta__ = {
 "_edit_use_anchors_": false
