@@ -8,12 +8,12 @@ func _ready():
 	#$Label.text = "Piesy"
 
 	rng.randomize()
-	var my_random_number = rng.randi_range(0, 100)
+	var my_random_number = rng.randi_range(1, 100)
 	get_node("SpinBoxCode").value = my_random_number
 	#var number_txt = str(my_random_number)
 	
 	#ON/OFF wyświetlanie w konsoli
-	print(my_random_number)
+	#print(my_random_number)
 	
 	
 	#print(number_txt)
@@ -26,6 +26,7 @@ func _ready():
 func _on_SpinBoxUI_value_changed(try):
 	#if Input.is_action_just_pressed('ui_accept'):
 	tries = tries - 0.5
+	get_node("SpinBoxUI").value = 0
 	get_node("LabelTries").value = tries
 	if try == $SpinBoxCode.value:
 		get_tree().change_scene("res://win.tscn")
@@ -39,4 +40,3 @@ func _on_SpinBoxUI_value_changed(try):
 	if $LabelTries.value == 0 and try == $SpinBoxCode.value:
 		get_tree().change_scene("res://win.tscn")
 	#reset wartości do zera
-	get_node("SpinBoxUI").value = 0
