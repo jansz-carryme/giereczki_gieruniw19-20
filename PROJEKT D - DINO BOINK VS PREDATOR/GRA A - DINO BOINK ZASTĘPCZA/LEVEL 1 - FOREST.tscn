@@ -110,7 +110,7 @@ extents = Vector2( 532.311, 155.913 )
 extents = Vector2( 232.206, 103.797 )
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 642.132, 219.148 )
+extents = Vector2( 62.2451, 431.681 )
 
 [node name="LEVEL1" type="Node2D"]
 script = ExtResource( 10 )
@@ -147,6 +147,11 @@ script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="cave" type="Sprite" parent="."]
+position = Vector2( 14602.4, -280.75 )
+scale = Vector2( 0.646801, 0.568742 )
+texture = ExtResource( 5 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 154.338, 661.784 )
@@ -282,16 +287,11 @@ shape = SubResource( 13 )
 [node name="nar5" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="nar5"]
-position = Vector2( 13230.8, -345.665 )
+position = Vector2( 13594.1, -567.212 )
 shape = SubResource( 14 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = -2
-
-[node name="cave" type="Sprite" parent="CanvasLayer"]
-position = Vector2( 14496, -421.591 )
-scale = Vector2( 1, 1.00991 )
-texture = ExtResource( 5 )
+layer = -1
 [connection signal="body_entered" from="next level" to="KinematicBody2D" method="_on_next_level_body_entered"]
 [connection signal="body_entered" from="KILLZONE" to="KinematicBody2D" method="_on_KILLZONE_body_entered"]
 [connection signal="body_entered" from="dialouge" to="KinematicBody2D" method="_on_dialouge_body_entered"]
@@ -299,3 +299,4 @@ texture = ExtResource( 5 )
 [connection signal="body_entered" from="nar2" to="KinematicBody2D" method="_on_nar2_body_entered"]
 [connection signal="body_entered" from="nar3" to="KinematicBody2D" method="_on_nar3_body_entered"]
 [connection signal="body_entered" from="nar0" to="KinematicBody2D" method="_on_nar0_body_entered"]
+[connection signal="body_entered" from="nar5" to="KinematicBody2D" method="_on_nar5_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://floor_cave.jpg" type="Texture" id=1]
 [ext_resource path="res://back_2.1.png" type="Texture" id=2]
@@ -241,7 +241,10 @@ extents = Vector2( 112.17, 13.2053 )
 height = 212.826
 
 [sub_resource type="RectangleShape2D" id=23]
-extents = Vector2( 30.5603, 95.3522 )
+extents = Vector2( 267.913, 43.4755 )
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 5.81567, 287.665 )
 
 [node name="Level2" type="Node2D"]
 script = ExtResource( 8 )
@@ -555,13 +558,13 @@ shape = SubResource( 22 )
 
 [node name="Area2D2" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2( 3334.54, -9.51373 )
-shape = SubResource( 23 )
-
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 5555.71, 676.594 )
 shape = SubResource( 23 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 1741.61, -42.4645 )
+shape = SubResource( 26 )
 [connection signal="body_entered" from="narr1" to="dino2" method="_on_narr1_body_entered"]
 [connection signal="body_entered" from="Area2D" to="dino2" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="narr2" to="dino2" method="_on_narr2_body_entered"]

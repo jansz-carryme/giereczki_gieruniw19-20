@@ -65,3 +65,7 @@ func _on_nar0_body_entered(body):
 
 func _on_next_level_body_entered(body):
 	get_tree().change_scene("res://Level2.tscn")
+
+
+func _on_nar5_body_entered(body):
+	$Label.text = "Finally, the cave! What could be awaiting inside?"
