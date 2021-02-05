@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://HashedBrowns-WyJgn.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://4fc332d10557f30e23c7328800e5557e95e68a9f.webp" type="Texture" id=2]
+[ext_resource path="res://death.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="4fc332d10557f30e23c7328800e5557e95e68a9f" type="Sprite" parent="."]
+position = Vector2( 575.415, 623.543 )
+scale = Vector2( 1.68927, 2.20079 )
+texture = ExtResource( 2 )
+
+[node name="Label" type="Button" parent="."]
+margin_left = 34.0
+margin_top = 536.0
+margin_right = 1001.0
+margin_bottom = 687.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+text = "Gee, that hurts my feelings. Try again!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Label" to="." method="_on_Label_pressed"]

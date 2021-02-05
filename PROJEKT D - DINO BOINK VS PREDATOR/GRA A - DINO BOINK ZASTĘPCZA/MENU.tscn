@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://button_start.gd" type="Script" id=1]
+[ext_resource path="res://HashedBrowns-WyJgn.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://4fc332d10557f30e23c7328800e5557e95e68a9f.webp" type="Texture" id=3]
+[ext_resource path="res://titlescreen.png" type="Texture" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.431373, 0.0784314, 0.368627, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="Sprite" parent="."]
+position = Vector2( 636.737, 358.099 )
+scale = Vector2( 1.0724, 1.21189 )
+texture = ExtResource( 3 )
+
+[node name="button_start" type="Button" parent="."]
+margin_left = 945.0
+margin_top = 486.0
+margin_right = 1166.0
+margin_bottom = 576.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/normal = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+text = "START GAYUM"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="titlescreen" type="Sprite" parent="button_start"]
+position = Vector2( -470.307, -214.472 )
+scale = Vector2( 1.34375, 1.3648 )
+texture = ExtResource( 4 )
+[connection signal="pressed" from="button_start" to="button_start" method="_on_button_start_pressed"]

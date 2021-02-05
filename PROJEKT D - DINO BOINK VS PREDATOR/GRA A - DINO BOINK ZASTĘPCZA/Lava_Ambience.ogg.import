@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Lava_Ambience.ogg-904972ae10c9e20c0f6904e0768ebc02.oggstr"
+
+[deps]
+
+source_file="res://Lava_Ambience.ogg"
+dest_files=[ "res://.import/Lava_Ambience.ogg-904972ae10c9e20c0f6904e0768ebc02.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

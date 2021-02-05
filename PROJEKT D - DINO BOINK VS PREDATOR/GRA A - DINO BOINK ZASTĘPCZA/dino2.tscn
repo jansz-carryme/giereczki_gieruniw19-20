@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://dino2.gd" type="Script" id=1]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=2]
+
+[node name="dino2" instance=ExtResource( 2 )]
+script = ExtResource( 1 )

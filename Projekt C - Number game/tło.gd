@@ -13,7 +13,7 @@ func _ready():
 	#var number_txt = str(my_random_number)
 	
 	#ON/OFF wyświetlanie w konsoli
-	#print(my_random_number)
+	print(my_random_number)
 	
 	
 	#print(number_txt)
